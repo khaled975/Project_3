@@ -1,0 +1,262 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+body{
+    position: relative;
+    font-weight: bolder;
+}
+/* general */
+h1{
+    letter-spacing: 8px;
+    font-style: italic;
+}
+.card-body{
+    font-size: 16px;
+}
+/* navbar */
+.navbar li a{
+    font-size: 22px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* carousel */
+.carousel-caption h1 ,.carousel-caption h2 ,.carousel-caption p {
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.carousel-caption h2 {
+    animation-delay: 0.2s;
+} 
+ .carousel-caption p { 
+    animation-delay: 0.4s;
+}
+@keyframes fade {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* welcome-sec */
+.btn span , a span{
+    font-size: 25px;
+}
+.jumbotron h1{
+    color: #3762f0;
+}
+.jumbotron p{
+    font-size: 20px;
+}
+.down{
+    background-image: url(../images/down.svg);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+.background-img{
+    background-image: url(../images/Center-for-Workforce-Development.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+.background-2{
+    background-image: url(../images/Untitled-1\ copy.JPG);
+}
+/* .accordion-sec*/
+#accordion .card a{
+    color: #3762f0;
+}
+/* wave-sec */
+.sec-pro{
+    background-color: rgba(214,223,251,.7);
+}
+.sec-pro code{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.sec-pro button{
+    width: 100px;
+    height: 40px;
+    letter-spacing: 4px;
+}
+/* wave-animation */
+.content{
+    background-image: url(../images/wave.svg);
+    background-repeat: repeat-x;
+    animation-name: waveMove;
+    animation-duration: 7000s;
+    animation-iteration-count: infinite;
+}
+@keyframes waveMove{
+    from{
+    background-position:  0px top ;
+    }
+    to{
+    background-position:  2000000px top ;
+    }
+}
+/* img-scale */
+.img-cont img {
+    transition:all .3s ease 0s
+}
+.img-cont {
+    overflow: hidden;
+    position: relative;
+}
+.card:hover .img-cont img{
+    transform:scale(1.2);
+}
+.courses .card .card-body a{
+    font-size: 18px;
+    font-weight: bold;
+}
+.courses .card .card-body p{
+    font-family: monospace;
+    font-size: 18px;
+}
+.icon-img-overlay{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top:0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.795);
+    transition: 0.4s;
+}
+.card:hover .icon-img-overlay{
+    opacity: 1;
+    width: 18%;
+}
+.icon-img-overlay li{
+    height: 25%;
+}
+.icon-img-overlay i{
+    font-size: 30px;
+    color: rgb(231, 225, 225);
+}
+.icon-img-overlay .facebook:hover{
+    color: #678feb;
+}
+.icon-img-overlay .whatsapp:hover{
+    color: rgb(32, 245, 32);
+}
+.icon-img-overlay .linkedin:hover{
+    color: #006699;
+}
+.icon-img-overlay .github:hover{
+    color: #ffffff;
+}
+.join a{
+    font-size: 15px;
+}
+.join h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1.5px;
+}
+.islam .card-body{
+    font-size: 22px;
+    letter-spacing: 6px;
+    font-family: cursive;
+    font-family: 'Jua', sans-serif;
+    font-weight: bolder;
+}
+/* bubbles animation */
+.jumbotron {
+    overflow-x: hidden;
+}
+.bub-cont{
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+.bub{
+	width: 200px;
+	height: 200px;
+	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+	box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
+	animation: morphing 10s infinite;
+	overflow: hidden;
+}
+.ani1{
+    width: 90px;
+    height: 50px;
+    margin: -20px 30px 90px 0px;
+}
+.ani2{
+    margin: -10px 0px 80px -100px;
+}
+.ani3{
+    width: 50px;
+    height: 30px;
+    margin: 30px 350px 0px auto ;
+}
+.ani4{
+    width: 400px;
+    height: 400px;
+    margin: -700px -200px 0px auto ;
+}
+.ani5{
+    width: 400px;
+    height: 400px;
+    margin: 20px 90px 0px 1050px ;
+}
+.ani6{
+    width: 40px;
+    height: 40px;
+    margin: -330px 0px 0px 120px;
+}
+.ani7{
+    width: 70px;
+    height: 70px;
+    margin-top: 150px;
+}
+.ani8{
+    width: 70px;
+    height: 70px;
+    margin: -50px 300px 0px auto;
+}
+	@keyframes morphing {
+		0% {
+			border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+			box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
+		}
+		25% { 
+			border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+		}
+		50% {
+			border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+			box-shadow :-10px -5px 50px rgba(0,0,0,0.2);
+		}
+		75% {
+			border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+		}
+}
+footer .foot{
+    background-image: url(../images/contact-us-background.jpg);
+    background-size: cover;
+}
+footer{
+    position: relative;
+}
+.row{
+    position: relative;
+}
+pre{
+    overflow:auto;
+}
